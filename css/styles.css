@@ -1,0 +1,158 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --bg-color: hsl(220, 18%, 78%);
+  --bg-color-light: hsl(220, 18%, 86%);
+  --title-color: hsl(220, 8%, 10%);
+  --text-color: hsl(220, 4%, 32%);
+  --text-color-light: hsl(220, 4%, 55%);
+  --body-color: hsl(220, 18%, 99%);
+  --container-color: hsl(220, 18%, 97%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Lora', serif;
+
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1124px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; /*For animation dark mode*/
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+a{
+  text-decoration: none;
+}
+/* NAV */
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  justify-content: space-between;
+  align-items: center;
+}
+.nav i{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.nav-mobile{
+  position: fixed;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  display: block;
+  margin: auto;
+}
+.nav-mobile ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-mobile a{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.nav-mobile a i{
+  font-size: 1.3rem;
+}
+
+/* HEADER */
+.header{
+  padding: 5rem 20px;
+  background-color: var(--bg-color);
+  height: 1000vh;
+}
+.header h1{
+  margin-bottom: 20px;
+}
+.header__description a{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: 0.3s;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.header__description a:hover{
+  gap: 7px;
+}
+
+.header__images{
+  width: 90%;
+  margin: auto;
+  position: relative;
+  border: 1px solid var(--text-color-light);
+}
+.header__images img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
