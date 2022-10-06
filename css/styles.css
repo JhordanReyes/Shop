@@ -82,10 +82,19 @@ a{
   width: 100%;
   padding: 10px;
   display: flex;
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
   justify-content: space-between;
+  background-color: transparent;
   align-items: center;
+  z-index: 20;
+  transition: 0.2s;
 }
+.nav-scroll{
+  background-color: hsla(240, 20%, 99%, 0.75);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  transition: .4s;
+}
+
 .nav i{
   font-size: 1.5rem;
   color: var(--text-color);
@@ -104,6 +113,9 @@ a{
   box-shadow: 0 0 10px rgba(0,0,0,.3);
   display: block;
   margin: auto;
+  z-index: 20;
+  background-color: hsla(240, 20%, 99%, 0.75);
+  backdrop-filter: blur(5px);
 }
 .nav-mobile ul{
   width: 100%;
@@ -125,9 +137,8 @@ a{
 
 /* HEADER */
 .header{
-  padding: 5rem 20px;
+  padding: 5rem 15px;
   background-color: var(--bg-color);
-  height: 1000vh;
 }
 .header h1{
   margin-bottom: 20px;
@@ -147,12 +158,44 @@ a{
 
 .header__images{
   width: 90%;
+  height: 390px;
   margin: auto;
   position: relative;
-  border: 1px solid var(--text-color-light);
 }
-.header__images img{
-  display: block;
+.header__images img:nth-child(1){
+  width: 230px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+
+}
+.header__images img:nth-child(2){
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+}
+
+/* MAIN */
+.main{
+  padding: 3rem 10px;
+  overflow: hidden;
+}
+.new{
+  width: 100%;
+}
+.new h2{
+  text-align: center;
+  font-size: var(--h1-font-size);
+  padding: 20px;
+  font-weight: 600;
+}
+.new img{
   width: 90%;
+  display: block;
   margin: auto;
 }
