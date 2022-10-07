@@ -159,9 +159,10 @@ a{
 
 .header__images{
   width: 90%;
+  max-width: 350px;
   height: 390px;
-  margin: auto;
   position: relative;
+  margin: auto;
 }
 .header__images img:nth-child(1){
   width: 230px;
@@ -188,6 +189,7 @@ a{
 }
 .new{
   width: 78%;
+  max-width: 300px;
   margin: auto;
 }
 .new h2{
@@ -198,6 +200,7 @@ a{
 }
 .new img{
   width: 100%;
+  margin: auto;
 }
 
 .new-card{
@@ -341,4 +344,37 @@ a{
   align-items: center;
   gap: 10px;
   margin-bottom: 6rem;
+}
+
+@media (min-width: 420px){
+  .footer{
+    padding: 20px 2.5rem;
+  }
+}
+@media (min-width: 900px){
+  .header{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header{
+    padding: 5rem 15px;
+    background-color: var(--bg-color);
+  }
+  .header h1{
+    margin-bottom: 20px;
+  }
+  .header__description a{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: 0.3s;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+  .header__images{
+    margin: initial;
+  }
 }
