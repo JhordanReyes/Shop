@@ -61,7 +61,7 @@ sr.reveal(".swiper", {
 })
 
 sr.reveal(".brand-img", {
-    duration: 3000,
+    duration: 2500,
     origin: "top",
     distance: "50px",
 })
