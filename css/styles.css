@@ -124,6 +124,7 @@ a{
   list-style: none;
 }
 .nav-mobile a{
+  font-size: 14px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -132,7 +133,7 @@ a{
   text-decoration: none;
 }
 .nav-mobile a i{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* HEADER */
@@ -234,7 +235,7 @@ a{
   padding: 20px;
 }
 .collection{
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: var(--bg-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -247,4 +248,45 @@ a{
 }
 .collection img{
   width: 200px;
+}
+
+.products{
+  padding: 3rem 0;
+}
+.products h2{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  padding: 1rem 0 0;
+}
+.swiper img{
+  width: 250px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  content: "";
+  display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+  font-size: 2rem;
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  color: var(--title-color);
+}
+.swiper-button-prev{
+  left: calc(50% - 5.5rem);
+}
+.swiper-button-next{
+  right: calc(50% - 5.5rem);
+}
+.swiper-slide{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

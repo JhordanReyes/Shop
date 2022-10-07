@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="js/scrollreveal.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>landing page</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scrollreveal.min.js"></script>
 </head>
 <body>
     <!-- NAV -->
@@ -49,7 +50,7 @@
         <div class="header__description">
             <h1>New Clothing <br>Collection</h1>
             <p>The new collection of clothing from <br>the best brands this year.</p>
-            <a href="#">
+            <a href="#new">
                 <span>Explore</span>
                 <i class="ri-arrow-right-line"></i>
             </a>
@@ -111,10 +112,50 @@
             </div>
             <img class="grid-4 collection-right" src="img/collection2.png" alt="">
         </section>
+
         <section class="products" id="products">
             <h2>Best Products</h2>
+            <div class="products__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/product1.png" alt="">
+                        <div>
+                            <h3>Gotland black Jacket</h3>
+                            <p>$124.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product2.png" alt="">
+                        <div>
+                            <h3>Black Sports Shorts</h3>
+                            <p>$34.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product3.png" alt="">
+                        <div>
+                            <h3>Knox Quilted Jacket</h3>
+                            <p>$97.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product4.png" alt="">
+                        <div>
+                            <h3>Blue Sport Pants</h3>
+                            <p>$69.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+            </div>
         </section>
     </main>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

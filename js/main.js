@@ -1,8 +1,20 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-
-
 /*=============== SWIPER PRODUCTS ===============*/
-
+var swiperProducts = new Swiper(".products__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 35,
+    grabCursor: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 window.sr = ScrollReveal();
@@ -24,28 +36,26 @@ sr.reveal(".new__img", {
     distance: "100px",
 })
 
-sr.reveal(".collection-left" ,{
+sr.reveal(".collection-left", {
     duration: 3000,
     origin: "right",
     distance: "100px",
 })
 
-sr.reveal(".collection-right" ,{
+sr.reveal(".collection-right", {
     duration: 3000,
     origin: "left",
     distance: "100px",
 })
 
+sr.reveal(".swiper", {
+    duration: 3000,
+    origin: "top",
+    distance: "50px",
+})
+
 window.addEventListener("scroll", () => {
     const nav = document.getElementById("nav");
     this.scrollY >= 50 ? nav.classList.add("nav-scroll")
-                    : nav.classList.remove("nav-scroll");
+        : nav.classList.remove("nav-scroll");
 })
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== DARK LIGHT THEME ===============*/ 
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
