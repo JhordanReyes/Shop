@@ -80,7 +80,7 @@ a{
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -186,7 +186,8 @@ a{
   overflow: hidden;
 }
 .new{
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .new h2{
   text-align: center;
@@ -195,7 +196,23 @@ a{
   font-weight: 600;
 }
 .new img{
-  width: 90%;
-  display: block;
-  margin: auto;
+  width: 100%;
+}
+
+.new-card{
+  display: flex;
+  flex-direction: column;
+}
+.new-card__description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.new-card__description h3{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+}
+.new-card__description i{
+  font-size: var(--h2-font-size);
 }

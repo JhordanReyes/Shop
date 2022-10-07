@@ -1,25 +1,4 @@
-========== HOME ==========
-.home__title
-New Clothing <br>
-Collection
-
-.home__description
-The new collection of clothing from <br>
-the best brands this year.
-
-.button__link
-Explore
-
 ========== NEW ==========
-.section__title
-New Categories
-
-.new__title | .new__subtitle
-Hoodie & Sweatshirt
-Winter collection
-
-Pants & Jackets
-Winter collection
 
 Coats & Coat Sets
 Winter collection
