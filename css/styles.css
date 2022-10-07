@@ -182,11 +182,11 @@ a{
 
 /* MAIN */
 .main{
-  padding: 3rem 10px;
+  padding: 3rem 0;
   overflow: hidden;
 }
 .new{
-  width: 80%;
+  width: 78%;
   margin: auto;
 }
 .new h2{
@@ -215,4 +215,36 @@ a{
 }
 .new-card__description i{
   font-size: var(--h2-font-size);
+}
+
+.grid-1{
+  grid-area: grid-1;
+}
+.grid-2{
+  grid-area: grid-2;
+}
+.grid-3{
+  grid-area: grid-3;
+}
+.grid-4{
+  grid-area: grid-4;
+}
+
+.grid-1, .grid-3{
+  padding: 20px;
+}
+.collection{
+  padding: 3rem 0;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "grid-1 grid-2"
+    "grid-4 grid-2"
+    "grid-4 grid-3";
+    gap: 15px;
+}
+.collection img{
+  width: 200px;
 }

@@ -8,19 +8,31 @@
 window.sr = ScrollReveal();
 
 sr.reveal(".header__description", {
-    duration: 2000,
+    duration: 3000,
     origin: "top",
     distance: "100px",
 })
 sr.reveal(".header__images", {
-    duration: 2000,
+    duration: 3000,
     origin: "bottom",
     distance: "100px",
 })
 
 sr.reveal(".new__img", {
-    duration: 2000,
+    duration: 2500,
     origin: "bottom",
+    distance: "100px",
+})
+
+sr.reveal(".collection-left" ,{
+    duration: 3000,
+    origin: "right",
+    distance: "100px",
+})
+
+sr.reveal(".collection-right" ,{
+    duration: 3000,
+    origin: "left",
     distance: "100px",
 })
 
