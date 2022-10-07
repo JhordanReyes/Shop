@@ -19,6 +19,12 @@ var swiperProducts = new Swiper(".products__swiper", {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 window.sr = ScrollReveal();
 
+window.addEventListener("scroll", () => {
+    const nav = document.getElementById("nav");
+    this.scrollY >= 50 ? nav.classList.add("nav-scroll")
+        : nav.classList.remove("nav-scroll");
+})
+
 sr.reveal(".header__description", {
     duration: 3000,
     origin: "top",
@@ -54,8 +60,8 @@ sr.reveal(".swiper", {
     distance: "50px",
 })
 
-window.addEventListener("scroll", () => {
-    const nav = document.getElementById("nav");
-    this.scrollY >= 50 ? nav.classList.add("nav-scroll")
-        : nav.classList.remove("nav-scroll");
+sr.reveal(".brand-img", {
+    duration: 3000,
+    origin: "top",
+    distance: "50px",
 })

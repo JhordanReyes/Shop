@@ -284,9 +284,31 @@ a{
   width: 100%;
   max-width: 400px;
   margin: auto;
-  padding: 20px 0 80px;
+  padding: 20px 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.swiper-slide h3{
+  margin-bottom: 5px;
+}
+
+.brands h2{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  font-weight: var(--font-semi-bold);
+}
+.brands__content div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.brands__content div img{
+  width: 150px;
+}
+.brands__content div img:nth-child(2){
+  margin-top: 15%;
 }

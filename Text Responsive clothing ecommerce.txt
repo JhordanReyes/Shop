@@ -1,24 +1,3 @@
-========== PRODUCTS ==========
-.section__title
-Best Products
-
-.products__title | .products__price
-Gotland black Jacket
-$124.99
-
-Black Sports Shorts
-$34.99
-
-Knox Quilted Jacket
-$97.99
-
-Blue Sport Pants
-$69.99
-
-========== BRANDS ==========
-.section__title
-Brands We Sell
-
 ========== FOOTER ==========
 .footer__description
 Committed to bringing you the <br> 
