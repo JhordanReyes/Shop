@@ -238,7 +238,9 @@ a{
   padding: 20px;
 }
 .collection{
+  width: 100%;
   padding: 5rem 0;
+  margin: auto;
   background-color: var(--bg-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -247,10 +249,11 @@ a{
     "grid-1 grid-2"
     "grid-4 grid-2"
     "grid-4 grid-3";
-    gap: 15px;
+  gap: 20px;
 }
 .collection img{
-  width: 200px;
+  width: 100%;
+  max-width: 220px;
 }
 
 .products{
@@ -347,8 +350,27 @@ a{
 }
 
 @media (min-width: 420px){
+  .collection{
+    padding: 5rem 5%;
+    gap: 10px 100px;
+  }
   .footer{
-    padding: 20px 2.5rem;
+    padding: 20px 3rem;
+  }
+}
+@media (min-width: 600px){
+  .header__description{
+    padding-left: 2rem;
+  }
+  .header__description h1{
+    font-size: 35px;
+  }
+  .header__description p, a{
+    font-size: 18px;
+  }
+  .collection{
+    padding: 5rem 10%;
+    gap: 10px 100px;
   }
 }
 @media (min-width: 900px){
@@ -358,23 +380,56 @@ a{
     align-items: center;
     justify-content: space-around;
   }
-  .header{
-    padding: 5rem 15px;
-    background-color: var(--bg-color);
-  }
   .header h1{
-    margin-bottom: 20px;
-  }
-  .header__description a{
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    transition: 0.3s;
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-size: 50px;
   }
   .header__images{
     margin: initial;
+  }
+  .new{
+    max-width: initial;
+    padding-bottom: 3rem;
+  }
+  .new__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  .collection{
+    padding: 5rem 22%;
+    gap: 10px 100px;
+  }
+}
+@media (min-width: 1050px){
+  .header{
+    padding: 0 10%;
+  }
+  .header__images{
+    max-width: 450px;
+    height: 500px;
+    margin: initial;
+  }
+  .header__images img:nth-child(1){
+    width: 300px;
+  }
+  .header__images img:nth-child(2){
+    width: 220px;
+  }
+}
+@media (min-width: 1200px){
+  .header{
+    padding: 0 13%;
+  }
+  .header__images{
+    max-width: 500px;
+    height: 530px;
+  }
+  .header__images img:nth-child(1){
+    width: 320px;
+  }
+  .header__images img:nth-child(2){
+    width: 240px;
   }
 }
