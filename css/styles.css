@@ -88,6 +88,9 @@ a{
   z-index: 20;
   transition: 0.2s;
 }
+.nav-desktop{
+  display: none;
+}
 .nav-scroll{
   background-color: hsla(240, 20%, 99%, 0.75);
   backdrop-filter: blur(5px);
@@ -399,6 +402,33 @@ a{
   }
 }
 @media (min-width: 900px){
+  .nav-mobile{
+    display: none;
+  }
+  .nav{
+    padding: 0 35px;
+  }
+  .nav > i{
+    display: none;
+  }
+  .nav-desktop{
+    display: inline-block;
+  }
+  .nav-desktop ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-desktop ul li{
+    padding: 9px 20px;
+  }
+  .nav-desktop ul li a{
+    color: var(--title-color);
+  }
+  .nav-desktop ul li a:hover{
+    text-decoration-color: #17191c !important;
+    text-decoration: underline;
+  }
   .header{
     display: flex;
     height: 100vh;
