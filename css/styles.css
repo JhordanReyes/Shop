@@ -255,6 +255,13 @@ a{
   width: 100%;
   max-width: 220px;
 }
+.collection p{
+  display: flex;
+  align-items: center;
+}
+.collection span{
+  margin-right: 5px;
+}
 
 .products{
   padding: 3rem 0;
@@ -352,7 +359,7 @@ a{
 @media (min-width: 420px){
   .collection{
     padding: 5rem 5%;
-    gap: 10px 100px;
+    gap: 10px 30px;
   }
   .footer{
     padding: 20px 3rem;
@@ -372,6 +379,24 @@ a{
     padding: 5rem 10%;
     gap: 10px 100px;
   }
+  .collection h2{
+    font-size: 30px;
+  }
+  .collection span{
+    font-size: 18px;
+  }
+  .collection img{
+    max-width: 300px;
+  }
+  .footer{
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex{
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 @media (min-width: 900px){
   .header{
@@ -387,7 +412,7 @@ a{
     margin: initial;
   }
   .new{
-    max-width: initial;
+    max-width: 1050px;
     padding-bottom: 3rem;
   }
   .new__container{
@@ -395,11 +420,30 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 70px;
   }
   .collection{
     padding: 5rem 22%;
     gap: 10px 100px;
+  }
+  .brands h2{
+    margin-top: 3rem;
+    font-size: var(--h1-font-size);
+    text-align: center;
+    font-weight: var(--font-semi-bold);
+  }
+  .brands__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .brands__content div img:nth-child(2){
+    margin-top: 0;
+  }
+  .flex{
+    width: 250px;
+    flex-direction: row;
   }
 }
 @media (min-width: 1050px){
@@ -415,7 +459,10 @@ a{
     width: 300px;
   }
   .header__images img:nth-child(2){
-    width: 220px;
+    width: 210px;
+  }
+  .flex{
+    width: 350px;
   }
 }
 @media (min-width: 1200px){
