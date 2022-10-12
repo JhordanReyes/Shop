@@ -14,6 +14,7 @@
   --text-color-light: hsl(220, 4%, 55%);
   --body-color: hsl(220, 18%, 99%);
   --container-color: hsl(220, 18%, 97%);
+  --bg-nav-mobile: hsla(240, 20%, 99%, 0.75);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -75,6 +76,7 @@ body.dark{
   --text-color: hsl(220, 4%, 70%);
   --text-color-light: hsl(220, 4%, 55%);
   --body-color: hsl(220, 18%, 15%);
+  --bg-nav-mobile: hsla(0, 0%, 2%, 0.85);
 }
 
 h1, h2, h3 {
@@ -115,7 +117,6 @@ a{
 .nav-mobile{
   position: fixed;
   width: 80%;
-  background-color: white;
   border-radius: 5px;
   left: 0;
   right: 0;
@@ -126,7 +127,7 @@ a{
   display: block;
   margin: auto;
   z-index: 20;
-  background-color: hsla(240, 20%, 99%, 0.75);
+  background-color: var(--bg-nav-mobile);
   backdrop-filter: blur(5px);
 }
 .nav-mobile ul{
