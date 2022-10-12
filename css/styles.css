@@ -67,6 +67,15 @@ body {
   color: var(--text-color);
   transition: .4s; /*For animation dark mode*/
 }
+/* hacer efecto dark */
+body.dark{
+  --bg-color: hsl(220, 18%, 10%);
+  --bg-color-light: hsl(220, 18%, 86%);
+  --title-color: hsl(220, 8%, 100%);
+  --text-color: hsl(220, 4%, 70%);
+  --text-color-light: hsl(220, 4%, 55%);
+  --body-color: hsl(220, 18%, 15%);
+}
 
 h1, h2, h3 {
   color: var(--title-color);
@@ -92,7 +101,7 @@ a{
   display: none;
 }
 .nav-scroll{
-  background-color: hsla(240, 20%, 99%, 0.75);
+  background-color: var(--bg-color);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 10px rgba(0,0,0,.2);
   transition: .4s;
@@ -276,6 +285,7 @@ a{
 }
 .swiper img{
   width: 250px;
+  margin-bottom: 15px;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after{
@@ -323,7 +333,7 @@ a{
   gap: 10px;
 }
 .brands__content div img{
-  width: 150px;
+  width: 120px;
 }
 .brands__content div img:nth-child(2){
   margin-top: 15%;
@@ -426,7 +436,7 @@ a{
     color: var(--title-color);
   }
   .nav-desktop ul li a:hover{
-    text-decoration-color: #17191c !important;
+    text-decoration-color: var(--title-color) !important;
     text-decoration: underline;
   }
   .header{
@@ -457,7 +467,7 @@ a{
     gap: 10px 100px;
   }
   .brands h2{
-    margin-top: 3rem;
+    margin: 2rem;
     font-size: var(--h1-font-size);
     text-align: center;
     font-weight: var(--font-semi-bold);
@@ -466,7 +476,10 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+  }
+  .brands__content div{
+    gap: 40px;
   }
   .brands__content div img:nth-child(2){
     margin-top: 0;

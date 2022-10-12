@@ -1,3 +1,10 @@
+/*=============== DARK MODE ===============*/
+const moon = document.getElementById("moon");
+moon.addEventListener("click", ()=> {
+    console.log("me diste click")
+    document.body.classList.toggle("dark");
+})
+
 /*=============== SWIPER PRODUCTS ===============*/
 var swiperProducts = new Swiper(".products__swiper", {
     slidesPerView: 1,
